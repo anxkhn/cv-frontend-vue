@@ -232,5 +232,42 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "5",
+        "text": "ai",
+        "spanClass": "caret",
+        "dropdownItems": [
+            {
+                "id": "1",
+                "item": "ai_settings",
+                "itemid": "openAISettings",
+                "attributes": []
+            },
+            {
+                "id": "2",
+                "item": "ai_explain",
+                "itemid": "openAIExplain",
+                "attributes": []
+            },
+            {
+                "id": "3",
+                "item": "ai_debug",
+                "itemid": "openAIDebug",
+                "attributes": []
+            },
+            {
+                "id": "4",
+                "item": "ai_generate",
+                "itemid": "openAIGenerator",
+                "attributes": []
+            },
+            {
+                "id": "5",
+                "item": "ai_tutor",
+                "itemid": "openAITutor",
+                "attributes": []
+            }
+        ]
     }
 ]

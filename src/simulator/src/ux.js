@@ -367,12 +367,22 @@ export function setupPanels() {
     setupPanelListeners('#verilogEditorPanel')
     setupPanelListeners('.timing-diagram-panel')
     setupPanelListeners('.testbench-manual-panel')
+    setupPanelListeners('.ai-explain-panel')
+    setupPanelListeners('.ai-debug-panel')
+    setupPanelListeners('.ai-generator-panel')
+    setupPanelListeners('.ai-tutor-panel')
 
     // Minimize Timing Diagram (takes too much space)
     minimizePanel('.timing-diagram-panel')
 
     // Minimize Testbench UI
     minimizePanel('.testbench-manual-panel')
+
+    // Minimize AI panels initially
+    minimizePanel('.ai-explain-panel')
+    minimizePanel('.ai-debug-panel')
+    minimizePanel('.ai-generator-panel')
+    minimizePanel('.ai-tutor-panel')
 
     $('#projectName').on('click', () => {
         $("input[name='setProjectName']").focus().select()

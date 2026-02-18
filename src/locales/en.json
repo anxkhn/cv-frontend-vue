@@ -50,7 +50,8 @@
                 "download_image": "Download Image",
                 "themes": "Themes",
                 "export_verilog": "Export Verilog",
-                "custom_shortcut": "Custom Shortcut"
+                "custom_shortcut": "Custom Shortcut",
+                "ai_settings": "AI Settings"
             },
             "help": {
                 "heading": "Help",
@@ -58,6 +59,14 @@
                 "user_manual": "User Manual",
                 "learn_digital_logic": "Learn Digital Logic",
                 "discussion_forum": "Discussion Forum"
+            },
+            "ai": {
+                "heading": "AI",
+                "ai_settings": "AI Settings",
+                "ai_explain": "Explain Circuit",
+                "ai_debug": "Debug Circuit",
+                "ai_generate": "Generate Circuit",
+                "ai_tutor": "AI Tutor"
             }
         },
         "panel_header": {
@@ -72,7 +81,12 @@
             "select_theme": "Select Theme",
             "boolean_logic_table": "BooleanLogicTable",
             "open_project": "Open Project",
-            "bit_converter": "Dec-Bin-Hex-Converter"
+            "bit_converter": "Dec-Bin-Hex-Converter",
+            "ai_explain": "AI Circuit Explainer",
+            "ai_debug": "AI Circuit Debugger",
+            "ai_generator": "AI Circuit Generator",
+            "ai_tutor": "AI Tutor",
+            "ai_settings": "AI Settings"
         },
         "panel_body": {
             "circuit_elements": {
@@ -162,6 +176,27 @@
             "decrease_width": "Decrease Width",
             "increase_width": "Increase Width",
             "reset": "Reset"
+        },
+        "ai": {
+            "settings_title": "AI Settings (BYOK)",
+            "key_note": "Your API keys are stored only in your browser's localStorage. They are never sent to CircuitVerse servers.",
+            "provider": "Provider",
+            "api_key": "API Key",
+            "api_key_placeholder": "Paste your API key here",
+            "model": "Model",
+            "key_configured": "Key configured for",
+            "no_key": "No API key set",
+            "explain": "Explain Circuit",
+            "debug": "Debug Circuit",
+            "generate": "Generate Circuit",
+            "tutor": "AI Tutor",
+            "configure_key_first": "Please configure your API key in AI Settings first.",
+            "generating": "Generating...",
+            "explaining": "Explaining...",
+            "debugging": "Debugging...",
+            "thinking": "Thinking...",
+            "error_generation": "Error generating response. Please check your API key and try again.",
+            "error_invalid_key": "Invalid API key. Please check your settings."
         }
     }
 }

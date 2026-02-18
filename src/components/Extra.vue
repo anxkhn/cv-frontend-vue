@@ -178,6 +178,15 @@
     <ReportIssue />
     <!-- --------------------------------------------------------------------------------------------- -->
 
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <!-- AI Features -->
+    <AISettings />
+    <AIExplainPanel v-if="!simulatorMobileStore.showMobileView" />
+    <AIDebugPanel v-if="!simulatorMobileStore.showMobileView" />
+    <AIGeneratorPanel v-if="!simulatorMobileStore.showMobileView" />
+    <AITutorPanel v-if="!simulatorMobileStore.showMobileView" />
+    <!-- --------------------------------------------------------------------------------------------- -->
+
     <v-btn
       class="cir-ele-btn"
       @mousedown="simulatorMobileStore.showElementsPanel = !simulatorMobileStore.showElementsPanel"
@@ -269,6 +278,11 @@ import QuickButtonMobile from './Navbar/QuickButton/QuickButtonMobile.vue'
 import TimingDiagramMobile from './Panels/TimingDiagramPanel/TimingDiagramMobile.vue'
 import ElementsPanelMobile from './Panels/ElementsPanel/ElementsPanelMobile.vue'
 import PropertiesPanelMobile from './Panels/PropertiesPanel/PropertiesPanelMobile.vue'
+import AISettings from './DialogBox/AISettings.vue'
+import AIExplainPanel from './Panels/AIExplainPanel/AIExplainPanel.vue'
+import AIDebugPanel from './Panels/AIDebugPanel/AIDebugPanel.vue'
+import AIGeneratorPanel from './Panels/AIGeneratorPanel/AIGeneratorPanel.vue'
+import AITutorPanel from './Panels/AITutorPanel/AITutorPanel.vue'
 import { simulationArea } from '#/simulator/src/simulationArea'
 import { paste } from '#/simulator/src/events'
 import  { panStart, panMove, panStop } from '#/simulator/src/listeners'

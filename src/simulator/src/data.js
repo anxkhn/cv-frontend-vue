@@ -20,6 +20,7 @@ import { bitConverterDialog } from './utils'
 import { keyBinder } from '#/components/DialogBox/CustomShortcut.vue'
 import { ExportProject } from '#/components/DialogBox/ExportProject.vue'
 import { ImportProject } from '#/components/DialogBox/ImportProject.vue'
+import { openAIPanel } from './ai/aiPanelHandlers'
 
 const logixFunction = {}
 logixFunction.save = save
@@ -43,6 +44,11 @@ logixFunction.createNewCircuitScope = createNewCircuit
 logixFunction.customShortcut = keyBinder
 logixFunction.ExportProject = ExportProject
 logixFunction.ImportProject = ImportProject
+logixFunction.openAISettings = () => openAIPanel('settings')
+logixFunction.openAIExplain = () => openAIPanel('explain')
+logixFunction.openAIDebug = () => openAIPanel('debug')
+logixFunction.openAIGenerator = () => openAIPanel('generator')
+logixFunction.openAITutor = () => openAIPanel('tutor')
 export default logixFunction
 
 // Hack to restart tour guide
